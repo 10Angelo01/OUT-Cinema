@@ -14,15 +14,17 @@ aframe-bmfont-text-component.min.js"></script>
             position="0 -10 0"
             geometry="primitive: plane; width: 10000; height: 10000;" 
             rotation="-90 0 0" 
-            material="src: #grid;repeat: 10000 10000;transparent: true;metalness:0.6;roughness: 0.4;sphericalEnvMap: #sky;"
+            material="color: black; shader: standard"
       ></a-entity>
 
-      <a-entity 
-            scale="3 3 3" 
+      <a-entity
+            scale="2 2 2"
             geometry="primitive: box; depth: .1; height: 3; width: 5"
             position="0 4 -10"
-            material = "shader: standard; color: #000">
+            material = "shader: flat; color: white"
+            light= "intensity: 3; type: point">
       </a-entity>
+      <!--
       <a-video
         src = "videos/dying-1ight.mp4"
         autoplay = "true"
@@ -30,7 +32,7 @@ aframe-bmfont-text-component.min.js"></script>
         height = "3"
         position = "0 4 -10">
       </a-video>
-
+-->
       <a-entity
             scale="3 3 3"
             geometry="primitive: ;"
@@ -38,7 +40,7 @@ aframe-bmfont-text-component.min.js"></script>
             material="color: #E6E6FA;metalness:1; roughness: 0.3; sphericalEnvMap: #sky;">
       </a-entity>
 
-      <a-sky src="#sky" rotation="0 -90 0"></a-sky>
+      <a-sky color="#333"></a-sky>
       </a-scene>
   </body>
 </html>
